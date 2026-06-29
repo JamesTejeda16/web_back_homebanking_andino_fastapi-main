@@ -31,8 +31,7 @@ app.add_middleware(
     # Cambiamos esto para agregar tu enlace de Vercel directamente
     allow_origins=[
         "http://localhost:5173", 
-        "https://web-back-homebanking-andino-fastapi-main-vmj8.onrender.com"
-
+        "https://web-front-homebanking-andino-react-one.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
