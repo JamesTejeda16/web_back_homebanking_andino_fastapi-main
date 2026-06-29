@@ -28,10 +28,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    # Cambiamos esto para agregar tu enlace de Vercel directamente
     allow_origins=[
-        "http://localhost:5173", 
-        "https://web-front-homebanking-andino-react-one.vercel.app"
+        "http://localhost:5173",
+        "https://web-front-homebanking-andino-react-one.vercel.app",
+        "https://web-front-homebanking-andino-react-main-7b8rrarve.vercel.app", 
+        "https://web-front-homebanking-andino-react-main.vercel.app"            
     ],
     allow_credentials=True,
     allow_methods=["*"],
