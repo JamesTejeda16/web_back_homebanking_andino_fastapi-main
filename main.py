@@ -28,7 +28,12 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=settings.cors_origins_list,
+    # Cambiamos esto para agregar tu enlace de Vercel directamente
+    allow_origins=[
+        "http://localhost:5173", 
+        "https://web-back-homebanking-andino-fastapi-main-vmj8.onrender.com"
+
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
